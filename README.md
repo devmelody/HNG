@@ -36,7 +36,7 @@ You don’t need any build tools or frameworks — just a browser.
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/devmelody/Task-0.git
+   git clone https://github.com/devmelody/HNG.git
 
 2. **Open the folder**
    cd task 0/
