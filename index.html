@@ -10,8 +10,19 @@
 </head>
 
 <body>
-  <article data-testid="test-profile-card">
-    <figure>
+  <main>
+<nav class="main-nav">
+        <div class="nav-container">
+          <a href="index.html" class="nav-logo">My Profile</a>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About Me</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    <article data-testid="test-profile-card">
+      <figure>
       <img
         data-testid="test-user-avatar"
         src="https://i.pravatar.cc/400?img=47"
@@ -23,7 +34,7 @@
       <header>
         <h2 data-testid="test-user-name">Melody Oyimiebi Ayefuwe</h2>
       </header>
-
+      
       <p data-testid="test-user-bio">
         Frontend developer passionate about crafting dynamic user experiences.
       </p>
@@ -31,7 +42,7 @@
       <p>
         Current time (ms): <span data-testid="test-user-time"></span>
       </p>
-
+      
       <nav aria-label="Social Links" data-testid="test-user-social-links">
         <ul>
           <li><a data-testid="test-user-social-twitter" href="https://twitter.com/melcamelcase" target="_blank" rel="noopener noreferrer">Twitter</a></li>
@@ -39,7 +50,7 @@
           <li><a data-testid="test-user-social-linkedin" href="https://linkedin.com/in/melcamelcase" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
         </ul>
       </nav>
-
+      
       <section>
         <h3>Hobbies</h3>
         <ul data-testid="test-user-hobbies">
@@ -61,5 +72,6 @@
 
   
   <script src="script.js"></script>
+</main>
 </body>
 </html>
