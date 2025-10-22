@@ -108,3 +108,173 @@ section ul {
     flex: 2;
   }
 }
+
+
+/* ----- About Page (about.html) ----- */
+
+main[data-testid="test-about-page"] {
+  display: grid;
+  gap: 1rem;
+  margin: 1.5rem auto;
+  max-width: 1100px;
+  padding: 1rem;
+}
+
+main[data-testid="test-about-page"] section {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+  main[data-testid="test-about-page"] {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+
+/* ----- Contact Page (contact.html) ----- */
+
+.contact-section {
+  padding: 1rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+form#contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+
+input,
+textarea {
+  width: 90%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Two-column layout for wider screens */
+@media (min-width: 768px) {
+  form#contact-form {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+
+  textarea,
+  #success-message,
+  button[type="submit"] {
+    grid-column: 1 / -1;
+  }
+}
+
+
+input:focus,
+textarea:focus {
+  outline: 2px solid purple;
+  border-color: purple;
+}
+
+button[type="submit"] {
+  background-color: purple;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: purple;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 0.9rem;
+}
+
+.success-message {
+  color: #2e7d32;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+
+
+.main-nav {
+  background-color: purple; 
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.75rem 1rem;
+}
+
+.nav-logo {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+  }
+}
+
